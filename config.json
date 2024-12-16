@@ -14,8 +14,8 @@
         "cool": "-p 1",
         "ftptest": " -T4 -p 21 --script=/usr/share/nmap/scripts/ftp-anon.nse",
         "TN3270-SCREEN": "-p23 -T4 --script tn3270-screen",
-        "VTAM-ENUM": "-p23 -T4 --script nwg-vtam-enum",
-        "TSO-ENUM": "-p23 -T4 --script nwg-tso-enum --script-args=userdb=tso_users.txt,tso-enum.commands=\"logon applid(TSO)\"",
+        "VTAM-ENUM": "-p23 -T4 --script vtam-enum",
+        "TSO-ENUM": "-p23 -T4 --script tso-enum --script-args=userdb=tso_users.txt,tso-enum.commands=\"logon applid(TSO)\"",
         "DB2-INFO": "-p4501 -sV -T4 --script=db2-das-info"
     }
 }
