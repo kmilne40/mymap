@@ -1,0 +1,70 @@
+======================================
+           MYMAP HELP GUIDE
+======================================
+
+MyMap is a wrapper around Nmap, providing a menu-driven interface to run nmap scripts, custom scans, 
+and manage outputs and reports. This guide helps you understand the menu options and workflow.
+
+USAGE:
+- Run the script: `ex 'vrtkm.view' "'DATASETNAME'"` (z/OS example)
+- For UNIX/Linux: `python pcaper.py` (if adapted)
+(Adjust based on how you actually run your tool)
+
+MAIN MENU OPTIONS:
+- Enter a number (1-10) to choose from one of the Script Categories.
+- 's' to search: Search for scripts by a keyword.
+- 'c' for custom command: Input your own Nmap command line options (without 'nmap' at the start).
+- 'd' for speed dial: Quickly run saved (favorited) commands.
+- 'e' for edit settings: Adjust configuration options such as whether to always ask about output file,
+  screen output, or report generation.
+- 'h' for help: Displays this help information (what you're reading now).
+- 'q' to quit: Exit the program.
+
+AFTER CHOOSING A SCRIPT:
+You’ll be prompted for:
+- The target (IP, hostname, or file containing targets).
+- The port options (e.g., -p 80 or a port range).
+- Whether to output results to a file (if configured).
+- Whether to view output on screen.
+- Whether to generate a penetration testing report.
+
+SEARCHING SCRIPTS:
+- Type 's' at main menu, enter a search term.
+- Choose a script from the search results and run it as above.
+
+CUSTOM COMMANDS:
+- Type 'c' at main menu.
+- Enter custom Nmap arguments (without the 'nmap' command).
+- View and report on output if desired.
+- Possibly add to speed dial if target is an IP.
+
+SPEED DIAL:
+- Type 'd' at main menu.
+- View saved commands, add new ones, delete old ones.
+- Run a saved command quickly without retyping everything.
+
+EDIT SETTINGS:
+- Type 'e' at main menu.
+- Toggle configuration options (like whether to ask about output files or reports every time).
+
+HELP:
+- Type 'h' at main menu to view this help file.
+
+QUIT:
+- Type 'q' at main menu to exit the tool.
+
+======================================
+       ADDITIONAL NOTES
+======================================
+- Ensure 'nmap' is installed and in your PATH.
+- Ensure 'config.json' is properly configured.
+- Ensure required Python dependencies (like termcolor, tqdm) are installed.
+- The help file is subject to improvements over time.
+
+======================================
+       END OF HELP
+======================================
+Press ENTER in the program after viewing this file to return to the menu.
+
+MYMAP was writen by Kev, improved by Hubert Januszewski and Sophie Hall, with a final once over by CGPT 1o
+
